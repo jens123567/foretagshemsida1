@@ -1,3 +1,47 @@
-.headerdiv li {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #171720;
+  color: #f1f3ef;
+  font-family: "Poppins", sans-serif;
+}
+
+.headerdiv {
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.headerdiv ul {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.headerdiv li {
+  margin-right: 24px;
+}
+
+#shoppingcart i {
+  font-size: 32px;
+  transition: 0.2s;
+}
+
+#shoppingcart i:hover {
+  color: red;
+}
+
+main {
+  background-color: #f1f3ef;
+}
+
+.phonepic {
+  width: 100%;
 }
