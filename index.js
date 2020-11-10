@@ -1,11 +1,26 @@
-const shoppingCartElement =  document.getElementById("clicks")
 let clicks = 0;
 
-function onClick () {
+function increaseCart(){
+    console.log("YEEET")
     clicks++;
-    shoppingCartElement.innerHTML = clicks;
-};
+    document.querySelector("#counter").innerHTML = clicks;
 
-[...document.querySelectorAll(".add-shopping-cart")].forEach(ele => {
-    ele.addEventListener("click",onClick);
-})
+}
+function decreseCart(){
+    clicks--;
+    if (clicks < 0) {
+        clicks = 0;
+    }
+    document.querySelector("#counter").innerHTML = clicks == 0 ? "" : clicks;
+
+    
+
+}
+
+for(const x of [...document.querySelectorAll(".increaseCount")]){
+    x.addEventListener("click",increaseCart)
+}
+for(const x of [...document.querySelectorAll(".decreaseCount")]){
+    x.addEventListener("click",decreseCart)
+    
+}
