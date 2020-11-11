@@ -1,4 +1,5 @@
 let clicks = 0;
+let ricks = 0;
 
 function increaseCart(){
     console.log("YEEET")
@@ -16,6 +17,14 @@ function decreseCart(){
     
 
 }
+function rickRoll(){
+    ricks ++;
+    if (ricks > 0) {
+        ricks = 0;
+        window.open( 
+            "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+    }
+}
 
 for(const x of [...document.querySelectorAll(".increaseCount")]){
     x.addEventListener("click",increaseCart)
@@ -23,4 +32,7 @@ for(const x of [...document.querySelectorAll(".increaseCount")]){
 for(const x of [...document.querySelectorAll(".decreaseCount")]){
     x.addEventListener("click",decreseCart)
     
+}
+for(const x of [...document.querySelectorAll(".ricked")]){
+    x.addEventListener("click", rickRoll)
 }
