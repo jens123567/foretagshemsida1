@@ -19,7 +19,7 @@ html {
 
 header {
   background-color: #1a1a1a;
-  color: #f1f3ef;
+  color: white;
 
   font-family: "Poppins", sans-serif;
   width: 100vw;
@@ -47,6 +47,11 @@ header {
 
 .headerdiv li {
   margin-right: 64px;
+}
+
+.headerdiv a {
+  text-decoration: none;
+  color: #fff;
   display: block;
 }
 
