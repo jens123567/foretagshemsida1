@@ -81,11 +81,12 @@ header {
 
 .topdiv {
   height: 47px;
+  top: 0;
 }
 
 .phonepic {
   margin-top: 30px;
-  width: fit-content;
+  height: 75vh;
 }
 
 .watchpic {
@@ -94,7 +95,7 @@ header {
 }
 
 .appIconImg {
-  width: 20vw;
+  width: 250px;
   margin-top: 80px;
 }
 
@@ -211,7 +212,7 @@ footer {
   text-align: center;
   padding: 10px;
   font-family: "Poppins", sans-serif;
-  height: 10vh;
+  height: 12vh;
 
   z-index: 10;
   position: sticky;
@@ -221,4 +222,23 @@ footer {
 
 footer p {
   margin: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  .headerdiv ul {
+    display: none;
+  }
+
+  .headerdiv {
+    height: 47px;
+  }
+
+  .shoppingcart {
+    position: absolute;
+    right: 96px;
+  }
+
+  #counter {
+    right: 80px;
+  }
 }
