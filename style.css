@@ -63,6 +63,10 @@ header {
   color: #839ba4;
 }
 
+.hamButton {
+  visibility: hidden;
+}
+
 .shoppingcart {
   position: absolute;
   right: 64px;
@@ -79,14 +83,9 @@ header {
   color: #839ba4;
 }
 
-.topdiv {
-  height: 47px;
-  top: 0;
-}
-
 .phonepic {
   margin-top: 30px;
-  height: 75vh;
+  height: 70vh;
 }
 
 .watchpic {
@@ -107,6 +106,7 @@ header {
   position: fixed;
   width: 100vw;
   z-index: 1;
+  text-align: center;
 
   color: black;
   background-color: #f1f3ef;
@@ -159,6 +159,7 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 47px;
+  text-align: center;
 
   width: 100vw;
   height: 100vh;
@@ -174,7 +175,7 @@ header {
   pointer-events: none;
 }
 
-#counter {
+.counter {
   background-color: red;
   color: white;
   padding: 4px;
@@ -197,6 +198,7 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 47px;
+  text-align: center;
 
   width: 100vw;
   height: 90vh;
@@ -230,7 +232,7 @@ footer p {
     flex-direction: column;
     align-items: left;
 
-    transition: 0.5s;
+    transition: 0.3s;
   }
 
   .headerHide {
@@ -261,16 +263,52 @@ footer p {
   }
 
   .shoppingcart {
+    color: white;
+
     position: absolute;
     right: 96px;
-    top: 36px;
+    top: 24px;
   }
 
-  #counter {
+  .hamButton {
+    visibility: visible;
+    color: white;
+
+    position: absolute;
+    top: 12px;
+    right: 32px;
+    font-size: 24px;
+  }
+
+  .headerSmall {
+    background-color: #1a1a1a;
+    position: fixed;
+    height: 48px;
+    width: 100vw;
+    z-index: 98;
+  }
+
+  .counter {
     right: 80px;
+    z-index: 98;
+  }
+
+  .phonepic {
+    height: 60vh;
   }
 
   #jensTech {
     text-decoration: underline;
+  }
+
+  #headerSmall-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 18px;
+    height: 47px;
   }
 }
