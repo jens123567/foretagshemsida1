@@ -1,5 +1,13 @@
 let clicks = 0;
+var navbar = document.querySelector(".headerHide")
+var ham = document.querySelector(".hamButton")
 
+
+function toggleHamburger(){
+    navbar.classList.toggle("headerShow")
+    console.log("yes")
+   /* ham.classList.toggle("showClose")*/
+  }
 
 function increaseCart(){
     console.log("YEEET")
@@ -23,6 +31,9 @@ function rickRoll(){
             "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
     
 }
+
+ham.addEventListener("click", toggleHamburger)
+
 
 for(const x of [...document.querySelectorAll(".increaseCount")]){
     x.addEventListener("click",increaseCart)

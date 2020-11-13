@@ -23,7 +23,7 @@ header {
 
   font-family: "Poppins", sans-serif;
   width: 100vw;
-  z-index: 99999;
+  z-index: 99;
 
   position: fixed;
 
@@ -225,20 +225,52 @@ footer p {
 }
 
 @media only screen and (max-width: 650px) {
-  .headerdiv ul {
-    display: none;
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    transition: 0.5s;
+  }
+
+  .headerHide {
+    transform: translateY(-100vh);
+  }
+
+  .headerShow {
+    transform: translateY(0px);
   }
 
   .headerdiv {
-    height: 47px;
+    padding: 0px 24px;
+  }
+
+  .headerdiv ul {
+    flex-direction: column;
+    margin-top: 32px;
+    width: 100vw;
+  }
+  .headerdiv li {
+    margin: 0px;
+  }
+
+  .headerdiv a {
+    display: block;
+    width: 100vw;
+    height: 64px;
   }
 
   .shoppingcart {
     position: absolute;
     right: 96px;
+    top: 36px;
   }
 
   #counter {
     right: 80px;
+  }
+
+  #jensTech {
+    text-decoration: underline;
   }
 }
