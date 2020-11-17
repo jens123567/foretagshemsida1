@@ -95,7 +95,7 @@ header {
 
 .appIconImg {
   width: 250px;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .div1 {
@@ -114,7 +114,7 @@ header {
 }
 
 .productHead {
-  margin-top: 20px;
+  margin-top: 32px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -184,7 +184,7 @@ header {
 
   position: absolute;
   right: 48px;
-  top: 8%;
+  top: 8px;
 }
 
 .div4 {
@@ -201,7 +201,7 @@ header {
   text-align: center;
 
   width: 100vw;
-  height: 90vh;
+  min-height: 90vh;
 
   -webkit-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.47);
@@ -224,6 +224,46 @@ footer {
 
 footer p {
   margin: 5px;
+}
+
+.musicOption-div {
+  display: flex;
+  flex-direction: row;
+  display: none;
+  transition: 0.3s;
+
+  margin: 24px 256px;
+}
+
+.musicOption-div-show {
+  display: flex;
+}
+
+.musicOption-column {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+
+  margin: 0px 12px;
+}
+
+.musicOption-h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+.musicOption-text {
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+
+  margin-bottom: 24px;
+}
+
+.musicOption-text li {
+  margin-top: 12px;
+}
+
+.learnMore {
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -310,5 +350,9 @@ footer p {
     color: white;
     font-size: 18px;
     height: 47px;
+  }
+
+  #productHead-id-phone {
+    margin-top: 64px;
   }
 }
