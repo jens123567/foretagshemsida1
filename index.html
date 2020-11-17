@@ -16,10 +16,10 @@
     <header class="headerHide">
         <nav class="headerdiv noSelect">
             <ul>
-                <li><a href="#"><h2 id="jensTech">Jens Tech&reg</h2></a></li>
-                <li><a href="#"><h2>Jens Phone</h2></a></li>
-                <li><a href="#"><h2>Jens Watch</h2></a></li>
-                <li><a href="#"><h2>Jens Music</h2></a></li>
+                <li><a href="index.html"><h2 id="jensTech">Jens Tech&reg</h2></a></li>
+                <li><a href="#jensPhone"><h2>Jens Phone</h2></a></li>
+                <li><a href="jensWatch.html"><h2>Jens Watch</h2></a></li>
+                <li><a href="#jensMusic"><h2>Jens Music</h2></a></li>
             </ul>
             <div class="decreaseCount shoppingcart"><i class="fas fa-shopping-cart"></i></div>
             <p class="noSelect counter"></p>
@@ -40,33 +40,35 @@
         </div>
       
 
-        <div class="div1">
+        <article class="div1" id="jensPhone">
                 <h2 class="productHead" id="productHead-id-phone">The biggest leap in technology</h2>
                 <img class="phonepic" src="media/phone.png" alt="image of the jens phone">
 
             <div class="buyButton noSelect">
-                <p><a href="#">Purchase</a> </p>
+                <p><a class="increaseCount">Purchase</a> </p>
             </div>
-        </div>
+        </article>
 
         <div class="div3"></div>
 
-        <div class="div2">
+        <article class="div2" id="jensWatch">
             <h2 class="productHead">The largest step in wearable technology</h2>
 
             <img class="watchpic" src="media/watch.png" alt="image of the jens watch">
 
-            <div class="buyButton noSelect">
-                <p><a class="add-shopping-cart">Purchase</a> </p>
+            <div class="buyButton noSelect" style="margin-bottom: 12px;">
+                <p><a class="increaseCount">Purchase</a> </p>
             </div>
 
+            <p><a href="jensWatch.html" id="watchLink">Learn More</a></p>
+
             
-        </div>
+        </article>
 
         <div class="div3"></div>
 
 
-        <div class="div4">
+        <article class="div4" id="jensMusic">
             <h2 class="productHead noSelect">The next generation of music streaming</h2>
 
             <img class="appIconImg" src="media/musicApp.png" alt="image of the jens watch">
@@ -75,6 +77,7 @@
                 <p><a class="increaseCount">Purchase</a> </p>
             </div>
             <p class="learnMore musicOption-text noSelect">Learn More <i class="fas fa-angle-down"></i></p>
+
 
             <div class="musicOption-div">
                 <div class="musicOption-column">
@@ -101,7 +104,7 @@
             </div>
 
 
-        </div>
+        </article>
     </main>
 
     <footer>

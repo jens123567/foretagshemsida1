@@ -85,12 +85,12 @@ header {
 
 .phonepic {
   margin-top: 30px;
-  height: 70vh;
+  height: 65vh;
 }
 
 .watchpic {
-  margin-top: 30px;
-  height: 60vh;
+  margin-top: 26px;
+  height: 55vh;
 }
 
 .appIconImg {
@@ -114,7 +114,7 @@ header {
 }
 
 .productHead {
-  margin-top: 32px;
+  margin-top: 16px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -126,6 +126,7 @@ header {
 
 .buyButton a {
   text-decoration: none;
+
   color: #fff;
   display: block;
   font-family: "Poppins", sans-serif;
@@ -151,6 +152,7 @@ header {
 .div2 {
   background-color: #2a2a2a;
   color: white;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -162,17 +164,40 @@ header {
   text-align: center;
 
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   -webkit-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.47);
   box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.47);
 }
 
+#watchLink {
+  margin-bottom: 40px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+  transition: 0.2s;
+}
+
 .div3 {
   height: 100vh;
 
   pointer-events: none;
+}
+
+.watchRow-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+
+  width: 60vw;
+}
+
+.watchpic2 {
+  margin: 0px 38px;
 }
 
 .counter {
@@ -229,18 +254,25 @@ footer p {
 .musicOption-div {
   display: flex;
   flex-direction: row;
-  display: none;
-  transition: 0.3s;
+  position: absolute;
+
+  transform: translateY(-8vh);
+  opacity: 0;
+  pointer-events: none;
 
   margin: 24px 256px;
 }
 
 .musicOption-div-show {
+  transform: translateY(0vw);
   display: flex;
+  position: relative;
+  transition: 0.4s;
+
+  opacity: 1;
 }
 
 .musicOption-column {
-  display: flex;
   flex-direction: column;
   width: 120px;
 
@@ -330,11 +362,15 @@ footer p {
 
   .counter {
     right: 80px;
-    z-index: 98;
+    z-index: 99;
   }
 
   .phonepic {
     height: 60vh;
+  }
+
+  .watchRow-div {
+    flex-direction: column;
   }
 
   #jensTech {

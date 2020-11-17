@@ -6,23 +6,20 @@ var showAll = document.querySelector(".learnMore");
 
 function toggleHamburger() {
   navbar.classList.toggle("headerShow");
-  console.log("yes");
 }
 function learnMore() {
   showContent.classList.toggle("musicOption-div-show");
-  console.log("showing");
 }
 
 function increaseCart() {
-  console.log("YEEET");
   clicks++;
   document.querySelector(".counter").innerHTML = clicks;
 }
 function decreseCart() {
-  console.log("no");
   clicks--;
   if (clicks < 0) {
     clicks = 0;
+    alert("Your cart is empty");
   }
   document.querySelector(".counter").innerHTML = clicks == 0 ? "" : clicks;
 }
