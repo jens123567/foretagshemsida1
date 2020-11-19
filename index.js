@@ -1,4 +1,6 @@
-let clicks = 0;
+let clicks = Number(localStorage.getItem("clicksStored"));
+document.querySelector(".counter").innerHTML = clicks == 0 ? "" : clicks;
+
 var navbar = document.querySelector(".headerHide");
 var ham = document.querySelector(".hamButton");
 var showContent = document.querySelector(".musicOption-div");
@@ -13,14 +15,19 @@ function learnMore() {
 
 function increaseCart() {
   clicks++;
+  localStorage.setItem("clicksStored", clicks.toString());
+
   document.querySelector(".counter").innerHTML = clicks;
 }
 function decreseCart() {
   clicks--;
+
   if (clicks < 0) {
     clicks = 0;
     alert("Your cart is empty");
   }
+  localStorage.setItem("clicksStored", clicks.toString());
+
   document.querySelector(".counter").innerHTML = clicks == 0 ? "" : clicks;
 }
 

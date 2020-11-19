@@ -160,7 +160,7 @@ header {
   z-index: 2;
   position: sticky;
   position: -webkit-sticky;
-  top: 47px;
+  top: 0px;
   text-align: center;
 
   width: 100vw;
@@ -193,6 +193,7 @@ header {
   text-align: left;
   font-family: "Roboto", sans-serif;
 
+  margin-top: 46px;
   width: 60vw;
 }
 
@@ -371,6 +372,10 @@ footer p {
 
   .watchRow-div {
     flex-direction: column;
+  }
+
+  .watchpic2 {
+    margin: 0px;
   }
 
   #jensTech {
